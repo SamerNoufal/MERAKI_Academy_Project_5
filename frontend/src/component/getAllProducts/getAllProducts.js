@@ -34,16 +34,16 @@ const Products = ({ search }) => {
       .catch((error) => {});
   };
   ////////////////////////////////////////////////////////
-  const updateProduct = (id) => {
-    let updatedProduct = { name, description, price, category, image };
+  // const updateProduct = (id) => {
+  //   // let updatedProduct = { name, description, price, category, image };
 
-    axios
-      .put(`http://localhost:5000/products/${id}`, updatedProduct)
-      .then((result) => {
-        getAllProducts();
-      })
-      .catch((error) => {});
-  };
+  //   axios
+  //     .put(`http://localhost:5000/products/${id}`, updatedProduct)
+  //     .then((result) => {
+  //       getAllProducts();
+  //     })
+  //     .catch((error) => {});
+  // };
 
   ////////////////////////////////////////////////////
 
